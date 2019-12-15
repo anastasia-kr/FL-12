@@ -1,0 +1,212 @@
+body {
+  background-color: #21232E; }
+
+header {
+  background-image: url("../img/m-h-night");
+  border-bottom-right-radius: 40%;
+  background-repeat: no-repeat;
+  background-position: 0% 53%;
+  background-size: 100%;
+  width: 1300px;
+  height: auto;
+  padding-left: 150px; }
+
+.landing-logo img {
+  width: 30px;
+  height: auto;
+  margin-top: 20px; }
+
+.landing-logo p {
+  display: block;
+  position: relative;
+  top: -50px;
+  left: 35px;
+  font-family: 'Hind', sans-serif;
+  font-size: 15px;
+  color: white;
+  font-weight: bold; }
+
+.landing-logo span {
+  position: relative;
+  left: -39px;
+  top: 12px;
+  font-family: 'Hind', sans-serif;
+  font-size: 7px;
+  color: white; }
+
+.header_heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  width: 350px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.header_text {
+  color: white;
+  display: block;
+  width: 450px;
+  font-size: 11px;
+  font-family: 'Hind', sans-serif;
+  line-height: 17px;
+  word-spacing: 4px;
+  padding-top: 25px; }
+
+.header_button {
+  background-color: #E3AC00;
+  margin-top: 50px;
+  margin-right: 70px;
+  margin-bottom: 120px;
+  margin-left: 0px;
+  border: 1px solid #E3AC00;
+  border-radius: 4%;
+  width: 100px;
+  height: 32px;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  font-size: 12px; }
+
+.header_button:hover {
+  background-color: #aa8105;
+  border-color: #aa8105;
+  background-color: #aa8105;
+  border-color: #aa8105; }
+
+.login .login {
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  margin-left: 40px;
+  padding-top: 5px; }
+
+.section_text {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  color: white; }
+
+.section_card_wrap, .section_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.section_card {
+  flex-direction: row;
+  width: 900px;
+  background-color: #3B3F50;
+  margin-bottom: 20px;
+  border-radius: 1%; }
+
+.section_card_img {
+  width: 900px;
+  height: auto;
+  margin: 15px;
+  padding-right: 0px; }
+
+.section_card_right_container {
+  color: white;
+  font-family: 'Hind', sans-serif;
+  text-align: center; }
+
+.section_card_heading {
+  font-size: 20px;
+  text-align: center; }
+
+.section_card_text {
+  text-align: justify;
+  padding-right: 70px;
+  padding-left: 70px;
+  color: rgba(255, 255, 255, 0.596);
+  font-size: 13px; }
+
+.section_link .section_link {
+  color: rgba(255, 255, 255, 0.596);
+  font-size: 13px; }
+
+.section_banner {
+  width: 954px;
+  height: 110px;
+  background: linear-gradient(80deg, #DCA206, #D5960E, #C77F1D, #BC6F28, #B36031, #B05A35, #A64B3F, #9E3E47, #942E51);
+  border-radius: 1%;
+  position: absolute;
+  left: 190px;
+  margin-top: 80px;
+  text-align: left; }
+
+.section_banner_heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding-left: 120px;
+  padding-top: 0px;
+  margin-bottom: 5px; }
+
+.section_banner_text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.596);
+  padding-left: 120px;
+  margin-top: 0px; }
+
+.section_banner_button {
+  background-color: #E3AC00;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border: 1px solid #E3AC00;
+  border-radius: 4%;
+  width: 100px;
+  height: 32px;
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  position: relative;
+  float: right;
+  top: -58px;
+  right: 100px; }
+
+.section_banner_button:hover {
+  background-color: #aa8105;
+  border-color: #aa8105;
+  background-color: #aa8105;
+  border-color: #aa8105; }
+
+.footer {
+  background-color: #3B3F50;
+  height: 180px;
+  margin-top: 130px; }
+
+.footer-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.596);
+  padding-top: 70px;
+  font-family: 'Hind', sans-serif;
+  font-size: 10px; }
+
+.footer_logo p, .footer_logo span {
+  color: rgba(255, 255, 255, 0.596); }
+
+.footer_text, .footer_logo, .footer-cr {
+  flex-wrap: wrap;
+  max-width: 220px; }
+
+.footer_logo {
+  position: relative;
+  top: 15px; }
+
+.footer_text {
+  line-height: 13px; }
+
+/*# sourceMappingURL=style2.css.map */
