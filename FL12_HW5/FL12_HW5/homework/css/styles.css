@@ -1,0 +1,472 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/* :root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #024161;
+  --link: #fff;
+  --link--hover: #1f52a4;
+  --bg-footer-color: #024161;
+} */
+body {
+  font-family: roboto;
+  background-color: #0b192f;
+}
+.post-1 {
+	background: #9d27b0;
+}
+.post-2 {
+	background: #9bb800;
+}
+.post-3 {
+	background: #ed5120;
+}
+.post-4 {
+	background: #9d27b0;
+}
+.post-5 {
+	background: #2d95bb;
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #024161;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav-logo a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.nav-logo a span {
+  color: #BE2F65;
+}
+.nav-logo {
+  margin-left: 15px;
+}
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+.nav-links li, .nav-links a, .nav-links ul, .nav-links {
+  padding: 0;
+  margin: 0;
+}
+.nav-links {
+  margin-right: 50px;
+}
+.nav-links a {
+  font-size: 20px;
+  text-decoration: none;
+  margin: 30px;
+  line-height: 70px;
+  color: white;
+}
+.nav-links li:hover {
+  background-color: #1f52a4;
+}
+header {
+  position: relative;
+  top: 80px;
+  margin-bottom: 100px;
+}
+.hero-section {
+  background: url('../img/post0.jpg') 50% 75% / cover no-repeat;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero-content {
+  width: 65%;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 69%;
+  margin-bottom: 20px;
+}
+.posts {
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+.posts:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.section-img {
+  width: 49.7%;
+}
+.section-description {
+  width: 50.3%;
+  padding: 50px;
+  padding-top: 20px;
+}
+.section-description:hover, .posts img:hover {
+  opacity: 0.6;
+}
+.section-description-full:hover {
+  opacity: 0.6;
+}
+.section-img img {
+  height: 100%;
+  width: 100%;
+}
+.date {
+  position: absolute;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.315);
+  font-weight: lighter;
+}
+.posts:nth-child(even) .date {
+  left: 1%;
+}
+.posts:nth-child(odd) .date {
+  left: 63%;
+}
+.section-description h2, .hero-section h1, .section-description-full h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.section-description p, .hero-section p, .section-description-full p {
+  color: rgba(255, 255, 255, 0.651);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 28px;
+}
+.posts:nth-child(even) .section-description h2, .posts:nth-child(even) .section-description p {
+  text-align: right;
+}
+.section-description-full {
+  width: 100%;
+}
+.post-5 {
+  height: auto;
+  padding-left: 50px;
+  padding-bottom: 40px;
+  padding-right: 100px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+aside {
+  width: 29%;
+}
+aside img {
+  width: 100%;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.aside-description  {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  height: 300px;
+  line-height: 28px;
+}
+.aside-description h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+.aside-description p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+footer {
+  background-color: #024161;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.473);
+  align-items: center;
+}
+.footer-2 {
+  width: 150px;
+  margin-right: 50px;
+}
+.footer-1 {
+  margin-left: 50px;  
+}
+.footer-1, .footer-2 {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.humburger {
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .humburger {
+		display: block;
+		width: 25px;
+		height: 12px;
+		position: absolute;
+		top: 10%;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.humburger span{
+		width: 100%;
+		height: 2px;
+		margin-top: 3px;
+		background-color: #fff;
+		opacity: 0.7;
+		display: block;
+	}
+	.humburger span:first-child {
+		opacity: 1;
+	}
+  .nav-links {
+    display: none;
+  }
+  .nav-logo {
+    margin-top: 80px;
+    margin-left: 33%;
+    margin-bottom: 50px;
+  }
+  .posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+  }
+  .posts:nth-child(even) {
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    top: 90px;
+  }
+  aside {
+    width: 100%;
+    position: relative;
+    top: 90px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 90px;
+  }
+  .footer-1, .footer-2 {
+    text-align: center;
+    margin: 0;
+  }
+  .footer-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .footer-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+  .hero-section {
+    position: relative;
+    top: 100px;
+  }
+  .hero-content {
+    width: 100%;
+    padding-right: 30px;
+  }
+  .section-img, .section-description {
+    width: 100%;
+    height: 50%;
+  }
+  .section-img img {
+    height: 100%;
+  }
+  .section-description h2, .post-5 h2{
+    font-size: 30px;
+  }
+  .section-description p, .post-5 p {
+    font-size: 15px;
+    padding: 0;
+  }
+  .section-description {
+    padding: 0;
+    padding-right: 50px;
+    margin: 20px;
+    text-align: left;
+  }
+  .posts:nth-child(even) .section-description h2, .posts:nth-child(even) .section-description p {
+    text-align: left;
+  }
+  .date {
+    font-size: 28px;
+  }
+  .posts:nth-child(even) .date,
+  .posts:nth-child(odd) .date {
+    left: 88%;
+  }
+  .date span {
+    font-size: 20px;
+  }
+  .post-5 {
+    height: 300px;
+    padding: 0;
+    margin: 0;
+  }
+  .section-description-full {
+    padding: 20px;
+    margin: 0;
+  }
+}
+  @media screen and (max-width: 768px) {
+    .humburger {
+      display: block;
+      width: 25px;
+      height: 12px;
+      position: absolute;
+      top: 10%;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    .humburger span{
+      width: 100%;
+      height: 2px;
+      margin-top: 3px;
+      background-color: #fff;
+      opacity: 0.7;
+      display: block;
+    }
+    .humburger span:first-child {
+      opacity: 1;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-logo {
+      margin-top: 80px;
+      margin-left: 41%;
+      margin-bottom: 50px;
+    }
+    .posts {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 550px;
+    }
+    .posts:nth-child(even) {
+      flex-direction: column;
+    }
+    main {
+      display: flex;
+    }
+    section {
+      width: 69%;
+      flex-direction: column;
+      position: relative;
+      top: 90px;
+    }
+    aside {
+      width: 29%;
+    }
+    footer {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 90px;
+    }
+    .footer-1, .footer-2 {
+      text-align: center;
+      margin: 0;
+    }
+    .footer-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+    .footer-2 {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-top: 0;
+    }
+    .hero-section {
+      position: relative;
+      top: 100px;
+    }
+    .hero-content {
+      width: 100%;
+      padding-right: 30px;
+    }
+    .section-img, .section-description {
+      width: 100%;
+      height: 50%;
+    }
+    .section-img img {
+      height: 100%;
+    }
+    .section-description h2, .post-5 h2{
+      font-size: 30px;
+    }
+    .section-description p, .post-5 p {
+      font-size: 15px;
+      padding: 0;
+    }
+    .section-description {
+      padding: 0;
+      padding-right: 50px;
+      margin: 20px;
+      text-align: left;
+    }
+    .posts:nth-child(even) .section-description h2, .posts:nth-child(even) .section-description p {
+      text-align: left;
+    }
+    .date {
+      font-size: 28px;
+    }
+    .posts:nth-child(even) .date,
+    .posts:nth-child(odd) .date {
+      left: 88%;
+    }
+    .date span {
+      font-size: 20px;
+    }
+    .post-5 {
+      height: 300px;
+      padding: 0;
+      margin: 0;
+    }
+    .section-description-full {
+      padding: 20px;
+      margin: 0;
+    } 
+    .aside-description h2 {
+      font-size: 25px;
+      padding-right: 10px;
+    }
+    .aside-description p {
+      font-size: 12px;
+      padding-right: 10px;
+    }
+    aside {
+      position: relative;
+      top: 90px;
+    }
+  }
